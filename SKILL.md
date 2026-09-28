@@ -20,6 +20,8 @@ Make the adopted game understandable from the rule canon itself. Consolidate rel
 
 Record links to the official materials used as sources.
 
+Integrate adopted gameplay information from official FAQs into the rule canon according to its meaning, including rules, conditions, exceptions, interactions, and examples that appear only in the FAQ.
+
 For FAQ-derived rulings, record the FAQ number. Add a direct link to the individual FAQ when one is available; otherwise link to the official FAQ source.
 
 Treat the current official rules as incorporating published errata. Use errata history only when the user requests historical investigation.
