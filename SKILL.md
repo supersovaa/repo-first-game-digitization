@@ -38,7 +38,7 @@ Make each implementation data entry traceable to the stored official text that s
 
 Keep the stored source as tracked repository content after implementation completes.
 
-When an already implemented element is revisited for implementation, refresh its stored official text from the current official source before making the implementation change. Replace the repository's current copy when the official text changed and use Git history for earlier copies.
+During normal implementation work, use the repository-stored official text. When the user instructs the project to update its canon, refresh the stored official text for affected implemented elements from the current official source. Replace the repository's current copy when the official text changed and use Git history for earlier copies.
 
 ## Define digitization scope
 
