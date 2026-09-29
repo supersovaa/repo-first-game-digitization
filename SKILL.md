@@ -10,7 +10,7 @@ Treat the official website as the source material, the rule canon as the project
 
 Use the repository canons as the default sources during design and implementation.
 
-Access official sources again when the user requests it. Apply official updates after the user instructs the project to update its canon.
+Access official sources again for implementation-source capture as described below or when the user requests it. Apply official updates after the user instructs the project to update its canon.
 
 ## Build the rule canon
 
@@ -25,6 +25,20 @@ Integrate adopted gameplay information from official FAQs into the rule canon ac
 For FAQ-derived rulings, record the FAQ number. Add a direct link to the individual FAQ when one is available; otherwise link to the official FAQ source.
 
 Treat the current official rules as incorporating published errata. Use errata history only when the user requests historical investigation.
+
+## Preserve implementation source text
+
+Before implementing a unit, item, or other game element whose behavior depends on official effect text, store the effect text needed for that implementation in the repository.
+
+Store source text only for elements that enter the implementation scope. Record the official URL for each stored source.
+
+Keep the stored official text distinct in meaning from implementation data. Let the repository choose the file format, placement, and whether both live in the same file.
+
+Make each implementation data entry traceable to the stored official text that supports it.
+
+Keep the stored source as tracked repository content after implementation completes.
+
+When an already implemented element is revisited for implementation, refresh its stored official text from the current official source before making the implementation change. Replace the repository's current copy when the official text changed and use Git history for earlier copies.
 
 ## Define digitization scope
 
