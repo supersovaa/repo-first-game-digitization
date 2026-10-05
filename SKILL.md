@@ -90,10 +90,14 @@ Treat canonical prose as authoritative when an example appears inconsistent. Let
 
 Update affected examples when a rule or design change changes their expected outcome.
 
-## Use examples as implementation tests
+## Expose binding examples to testing
 
-Turn binding examples from both canons into implementation tests.
+Treat binding examples from both canons as settled expected outcomes for the workflow responsible for testing.
 
-Use the project's existing testing approach and verify the specified outcomes through the most appropriate test level.
+Make each binding example clear enough that the applicable behavior can be checked without inventing additional rule or design decisions.
+
+When implementation proceeds, make applicable binding examples available to the project's testing workflow.
+
+Leave derivation of executable tests, test-level selection, test implementation, and test execution to the workflow responsible for testing.
 
 Keep implementation behavior aligned with the rule canon, the design canon, and their binding examples.
