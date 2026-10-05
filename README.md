@@ -12,7 +12,7 @@ The skill separates three responsibilities:
 
 For implemented game elements, it also keeps the needed official effect text in the repository, records its official source, and keeps implementation data traceable to that text.
 
-It also records digitization-scope exclusions, routes unresolved conflicts and gaps to the user, and turns binding examples into implementation tests.
+It also records digitization-scope exclusions, routes unresolved conflicts and gaps to the user, and records binding examples as settled expected outcomes for downstream testing workflows.
 
 ## Contents
 
