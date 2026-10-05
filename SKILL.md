@@ -90,6 +90,16 @@ Treat canonical prose as authoritative when an example appears inconsistent. Let
 
 Update affected examples when a rule or design change changes their expected outcome.
 
+## Do not require unrealizable examples
+
+Do not require a binding example or executable test merely because a rule or design admits a theoretical branch.
+
+When no concrete scenario can be constructed from the real game elements currently in implementation scope, do not require that case as current test evidence and do not introduce fictional elements, test-only effects, or otherwise unnecessary generic machinery solely to make the case testable.
+
+Distinguish directly constructing an otherwise unreachable initial test state from inventing an interaction that the in-scope real game elements cannot produce.
+
+When a plan intentionally omits a test for this reason, record that the current implementation scope has no realizable example. During review, independently inspect the in-scope real elements and confirm that no such example can actually be constructed. If one can be constructed, treat the omission as a test-plan gap.
+
 ## Expose binding examples to testing
 
 Treat binding examples from both canons as settled expected outcomes for the workflow responsible for testing.
