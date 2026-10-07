@@ -100,6 +100,14 @@ Distinguish directly constructing an otherwise unreachable initial test state fr
 
 When a plan intentionally omits a test for this reason, record that the current implementation scope has no realizable example. During review, independently inspect the in-scope real elements and confirm that no such example can actually be constructed. If one can be constructed, treat the omission as a test-plan gap.
 
+When required behavior remains part of the implementation but no real in-scope elements can make that behavior observable, record the uncovered behavior as deferred formal coverage rather than treating the test omission as permanently satisfied. Record what behavior remains uncovered, why no realizable example exists, and the condition under which a real element would make it observable.
+
+The originating implementation may complete with deferred formal coverage while that realization condition remains absent, provided all currently observable required behavior has the required test evidence.
+
+Allow deferred formal coverage to remain unresolved for as long as the realization condition is absent. Do not introduce future elements, fictional elements, test-only effects, or otherwise unnecessary generic machinery solely to discharge it.
+
+When a later in-scope real element makes the deferred case realizable, make that deferred coverage available to the planning and testing workflow so the case receives formal coverage at that point.
+
 ## Expose binding examples to testing
 
 Treat binding examples from both canons as settled expected outcomes for the workflow responsible for testing.
