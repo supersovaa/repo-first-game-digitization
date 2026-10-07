@@ -96,9 +96,9 @@ Do not require a binding example or executable test merely because a rule or des
 
 When no concrete scenario can be constructed from the real game elements currently in implementation scope, do not require that case as current test evidence. Keep behavior that remains required but unobservable as deferred formal coverage rather than inventing gameplay meaning solely to make it testable.
 
-During staged implementation, prefer a temporary subtractive test element when a real in-scope element already establishes the behavior but its complete implementation is not yet executable. Construct the temporary element only by removing properties, effects, or components from that real element. Preserve every precondition, interaction, and outcome material to the behavior under test.
+During staged implementation, a temporary test element formed only by removing gameplay properties, effects, or components from a real in-scope element does not introduce new game meaning when every precondition, interaction, and outcome material to the behavior under test is preserved.
 
-Treat a subtractive test element as test support rather than as a binding example or game element. Do not add properties, effects, interactions, or future elements absent from the real source element to create a testable scenario.
+Treat such a reduced element as test support rather than as a binding example or game element. Adding gameplay properties, effects, interactions, or future elements absent from the real source element remains invention and does not make an otherwise unrealizable case realizable.
 
 Distinguish directly constructing an otherwise unreachable initial test state from inventing an interaction that the in-scope real game elements cannot produce.
 
