@@ -94,17 +94,21 @@ Update affected examples when a rule or design change changes their expected out
 
 Do not require a binding example or executable test merely because a rule or design admits a theoretical branch.
 
-When no concrete scenario can be constructed from the real game elements currently in implementation scope, do not require that case as current test evidence and do not introduce fictional elements, test-only effects, or otherwise unnecessary generic machinery solely to make the case testable.
+When no concrete scenario can be constructed from the real game elements currently in implementation scope, do not require that case as current test evidence. Keep behavior that remains required but unobservable as deferred formal coverage rather than inventing gameplay meaning solely to make it testable.
+
+During staged implementation, prefer a temporary subtractive test element when a real in-scope element already establishes the behavior but its complete implementation is not yet executable. Construct the temporary element only by removing properties, effects, or components from that real element. Preserve every precondition, interaction, and outcome material to the behavior under test.
+
+Treat a subtractive test element as test support rather than as a binding example or game element. Do not add properties, effects, interactions, or future elements absent from the real source element to create a testable scenario.
 
 Distinguish directly constructing an otherwise unreachable initial test state from inventing an interaction that the in-scope real game elements cannot produce.
 
-When a plan intentionally omits a test for this reason, record that the current implementation scope has no realizable example. During review, independently inspect the in-scope real elements and confirm that no such example can actually be constructed. If one can be constructed, treat the omission as a test-plan gap.
+When a plan intentionally omits a test because no realizable example exists, record that the current implementation scope has no realizable example. During review, independently inspect the in-scope real elements and confirm that no such example can actually be constructed. If one can be constructed, treat the omission as a test-plan gap.
 
 When required behavior remains part of the implementation but no real in-scope elements can make that behavior observable, record the uncovered behavior as deferred formal coverage rather than treating the test omission as permanently satisfied. Record what behavior remains uncovered, why no realizable example exists, and the condition under which a real element would make it observable.
 
 The originating implementation may complete with deferred formal coverage while that realization condition remains absent, provided all currently observable required behavior has the required test evidence.
 
-Allow deferred formal coverage to remain unresolved for as long as the realization condition is absent. Do not introduce future elements, fictional elements, test-only effects, or otherwise unnecessary generic machinery solely to discharge it.
+Allow deferred formal coverage to remain unresolved for as long as the realization condition is absent. Do not invent properties, effects, interactions, or future elements solely to discharge it.
 
 When a later in-scope real element makes the deferred case realizable, make that deferred coverage available to the planning and testing workflow so the case receives formal coverage at that point.
 
