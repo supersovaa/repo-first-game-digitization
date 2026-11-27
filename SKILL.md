@@ -1,8 +1,11 @@
+---
+name: repo-first-game-digitization
+description: Digitize an analog game from rules on its official website when the project maintains its own rule and design canons.
+---
+
 # repo-first-game-digitization
 
-Digitize an analog game from official rules while keeping repository-local rule and design canons as the working sources of truth.
-
-Apply this skill when an analog game's official rules are available on an official website and the project will maintain its own rule canon and design canon.
+Use the rules on the game’s official website as source material when digitizing an analog game. Maintain the project’s rule and design canons in the repository and use them as the working sources of truth.
 
 ## Core model
 
