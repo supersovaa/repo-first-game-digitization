@@ -1,6 +1,6 @@
 ---
 name: repo-first-game-digitization
-description: Digitize an analog game from rules on its official website when the project maintains its own rule and design canons.
+description: Digitize an analog game from rules on its official website when creating or maintaining the project’s own rule and design canons.
 ---
 
 # repo-first-game-digitization
